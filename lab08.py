@@ -91,7 +91,7 @@ plt.ylabel("Sum Squared Error")
 plt.title("A2: AND Gate – Step Activation | Error vs Epochs")
 plt.legend()
 plt.tight_layout()
-plt.savefig("/mnt/user-data/outputs/A2_AND_step_error.png", dpi=120)
+plt.savefig("A2_AND_step_error.png", dpi=120)
 plt.show()
 
 
@@ -123,7 +123,7 @@ plt.ylabel("SSE")
 plt.title("A3: AND Gate – Activation Function Comparison")
 plt.legend(fontsize=8)
 plt.tight_layout()
-plt.savefig("/mnt/user-data/outputs/A3_activation_comparison.png", dpi=120)
+plt.savefig("A3_activation_comparison.png", dpi=120)
 plt.show()
 
 print("\n  Convergence Summary:")
@@ -149,7 +149,7 @@ plt.xlabel("Learning Rate")
 plt.ylabel("Epochs to Converge")
 plt.title("A4: AND Gate – Learning Rate vs Epochs to Converge")
 plt.tight_layout()
-plt.savefig("/mnt/user-data/outputs/A4_lr_vs_epochs.png", dpi=120)
+plt.savefig("A4_lr_vs_epochs.png", dpi=120)
 plt.show()
 
 # xor 
@@ -179,7 +179,7 @@ plt.ylabel("SSE")
 plt.title("A5: XOR Gate – Activation Function Comparison")
 plt.legend(fontsize=8)
 plt.tight_layout()
-plt.savefig("/mnt/user-data/outputs/A5_XOR_activation_comparison.png", dpi=120)
+plt.savefig("A5_XOR_activation_comparison.png", dpi=120)
 plt.show()
 
 # Customer Transaction Classification
@@ -253,7 +253,7 @@ plt.ylabel("SSE")
 plt.title("A6: Customer Classification – Sigmoid Perceptron")
 plt.legend()
 plt.tight_layout()
-plt.savefig("/mnt/user-data/outputs/A6_customer_error.png", dpi=120)
+plt.savefig("A6_customer_error.png", dpi=120)
 plt.show()
 
 # Pseudo-Inverse Comparison
@@ -273,7 +273,7 @@ print(f"  Targets                : {y_cust.tolist()}")
 print(f"  Accuracy               : {accuracy_score(y_cust, preds_pinv) * 100:.1f}%")
 print(f"  Perceptron Accuracy    : {accuracy_score(y_cust, preds_binary) * 100:.1f}%")
 
-# A8: Back-Propagation Neural Network 
+# Back-Propagation Neural Network 
 
 print("\n" + "=" * 60)
 print("A8: Backpropagation – AND Gate (2-2-1 Network)")
@@ -339,7 +339,7 @@ plt.ylabel("SSE")
 plt.title("A8: Backpropagation AND Gate – Error vs Epochs")
 plt.legend()
 plt.tight_layout()
-plt.savefig("/mnt/user-data/outputs/A8_backprop_AND_error.png", dpi=120)
+plt.savefig("A8_backprop_AND_error.png", dpi=120)
 plt.show()
 
 # Backpropagation – XOR Gate
@@ -358,7 +358,7 @@ plt.ylabel("SSE")
 plt.title("A9: Backpropagation XOR Gate – Error vs Epochs")
 plt.legend()
 plt.tight_layout()
-plt.savefig("/mnt/user-data/outputs/A9_backprop_XOR_error.png", dpi=120)
+plt.savefig("A9_backprop_XOR_error.png", dpi=120)
 plt.show()
 
 # A10: 2-Output Node Perceptron 
@@ -421,7 +421,7 @@ plt.ylabel("SSE")
 plt.title("A10: AND Gate 2-Output Nodes – Backprop Error")
 plt.legend()
 plt.tight_layout()
-plt.savefig("/mnt/user-data/outputs/A10_2output_AND_error.png", dpi=120)
+plt.savefig("A10_2output_AND_error.png", dpi=120)
 plt.show()
 
 # MLPClassifier – AND Gate & XOR Gate
@@ -468,5 +468,5 @@ print(f"  Accuracy    : {accuracy_score(y_cust, preds_mlp_cust) * 100:.1f}%")
 print(f"  Iterations  : {mlp_cust.n_iter_}")
 
 print("\n" + "=" * 60)
-print("All experiments complete. Plots saved to /mnt/user-data/outputs/")
+print("All experiments complete. Plots saved to /outputs/")
 print("=" * 60)
